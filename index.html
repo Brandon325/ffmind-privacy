@@ -1,50 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Offmind — Privacy Policy</title>
+<title>Offmind Privacy Policy</title>
+<meta name="description" content="How Offmind handles your information.">
 <style>
-  body { font-family: -apple-system, Helvetica, Arial, sans-serif; max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; color: #1d1d1f; line-height: 1.6; }
-  h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
-  p, li { font-size: 1rem; }
-  .updated { color: #6e6e73; font-size: 0.9rem; }
+:root{color-scheme:light dark;--bg:#fbf8f3;--fg:#241f1a;--mut:#665d52;--link:#0b5cad;--line:#ddd3c5}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1915;--fg:#f1ebe2;--mut:#b3a998;--link:#7db8f5;--line:#3a342c}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,system-ui,"Segoe UI",sans-serif}
+main{max-width:42rem;margin:0 auto;padding:1.5rem 1rem 4rem}
+h1{font-size:1.9rem;line-height:1.2}h2{font-size:1.25rem;margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem}
+h3{font-size:1.05rem;margin-top:1.4rem}
+a{color:var(--link)}li{margin:.35rem 0}.note{color:var(--mut)}
 </style>
 </head>
 <body>
-<h1>Offmind — Privacy Policy</h1>
-<p class="updated">Last updated: September 26, 2026</p>
-
-<p>Offmind ("the app") is a personal mental-load manager. Your data lives on your devices and in your private iCloud — not on our servers, because we don't have any.</p>
-
-<h2>Data we collect</h2>
-<p>We collect nothing. The app has no accounts, no sign-in, and no backend servers. Everything you enter — captures, tasks, groceries, fridge items, cards, plans, people — is stored on your device and, if you use iCloud, synced through your own private iCloud account (Apple's CloudKit). We never see it, and we couldn't access it if we tried.</p>
-
-<h2>Data shared with third parties</h2>
-<p>None. The app includes no third-party analytics, advertising, or tracking SDKs.</p>
-
-<h2>Device permissions</h2>
-<p>The app requests access to certain iOS features only to perform the functions you ask for, and that data never leaves your device except through Apple's own services:</p>
+<main>
+<h1>Offmind Privacy Policy</h1>
+<p><strong>Effective date:</strong> October 20, 2026</p>
+<p><strong>Contact:</strong> <a href="mailto:bwventures101@gmail.com">bwventures101@gmail.com</a></p>
+<h2>The short version</h2>
+<p>Offmind keeps your information on your iPhone. This version has no Offmind accounts, no analytics, no advertising and no tracking. We (the developer) do not receive what you enter. Two things can leave your phone: data you choose to share through iCloud, and a product barcode you scan, which is looked up on Open Food Facts. Both are explained below.</p>
+<h2>What stays on your iPhone</h2>
+<p>Your captures, tasks, plans, groceries and stored food, receipts and receipt photos, chores, habits, workouts, bills, cards and settings are stored on your device. Speech is transcribed on the device. Camera images (barcodes, dates, receipts) and receipt text are read on the device. If your iPhone offers Apple's on-device language model, receipt names are tidied and the type of a capture (task, grocery, plan, reminder) is suggested on the device; you can turn the capture suggestion off in Settings. Diagnostic reports (Settings, Help, Performance reports) stay on the device unless you choose to share them.</p>
+<h2>iCloud syncing and sharing</h2>
+<p>If you create a group and invite someone, the items you choose to share are stored in your iCloud account and in the iCloud accounts of the people you invite, using Apple's iCloud (CloudKit). Those people can see what you share with the group. We do not run a server for this and do not have access to that data. Apple's privacy policy applies to iCloud. You can stop sharing, remove people or leave a group at any time in People &amp; groups.</p>
+<h2>Services Offmind contacts</h2>
 <ul>
-  <li><strong>Camera</strong> — scanning grocery receipts. Images are processed on-device.</li>
-  <li><strong>Microphone &amp; Speech Recognition</strong> — voice capture. Processed on-device.</li>
-  <li><strong>Notifications</strong> — reminders for due dates, expiring items, and credits.</li>
-  <li><strong>Calendar &amp; Reminders</strong> — only if you connect them; entries stay between the app and Apple's Calendar/Reminders.</li>
-  <li><strong>Contacts</strong> — only if you pick a contact when adding a friend; used solely to address the invitation.</li>
+<li><strong>Open Food Facts (barcode lookup).</strong> When you scan a product barcode, the barcode number is sent to Open Food Facts (world.openfoodfacts.org) to look up the product's name. The request also carries your preferred language, the app's name and version and the address of our support page (so Open Food Facts can reach us), and, as with any internet request, your IP address reaches their servers. Offmind does not send your name, email, contact details or any identifier of you, so the lookup is not linked to you. It is used only to fill in the product name, not for tracking or advertising. Open Food Facts decides how long it keeps its server logs; see the <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy policy</a>. You can enter names by hand and never use the barcode scanner.</li>
+<li><strong>Apple.</strong> iCloud (if you use sharing), notifications you allow, and Apple Calendar, Reminders and Health on your device if you allow them.</li>
 </ul>
-<p>You can revoke any permission at any time in iOS Settings; the related features will simply stop working.</p>
-
-<h2>Sharing with other people</h2>
-<p>If you share a grocery list, household, or plan with someone, that sharing happens directly between your iCloud accounts via Apple's CloudKit sharing. We are not a party to it and cannot see shared content.</p>
-
+<h2>Apple Health</h2>
+<p>If you link a habit to Apple Health, Offmind only reads the measure you choose (for example steps) to check the habit off. It never writes to Health. Health data stays on your device: it is never sent to us or any other service, never included in group sharing, and never included in exported backups, even after you remove the Health link. You can turn the link off in the habit or in the Health app.</p>
+<h2>Apple Calendar, camera, notifications and other permissions</h2>
+<ul>
+<li><strong>Calendar:</strong> if you allow it, Offmind reads the calendars you select and writes plans to a dedicated Offmind calendar. Reminders import copies only the lists you choose.</li>
+<li><strong>Camera and photos:</strong> used to scan barcodes, dates and receipts. Images are processed on the device.</li>
+<li><strong>Microphone and speech recognition:</strong> used for voice capture, on the device.</li>
+<li><strong>Notifications:</strong> reminders are scheduled on the device by the system. Nothing is sent from a server.</li>
+<li><strong>Contacts:</strong> when you add a person you can pick one contact. Offmind receives only the email address of the contact you pick, to address the invitation. It does not read your address book and needs no Contacts permission.</li>
+</ul>
+<p>Each permission is requested only when you use the feature that needs it and can be changed in iPhone Settings.</p>
+<h2>Backups</h2>
+<p>Settings, Data, storage &amp; privacy, Backup &amp; restore creates a file that you save where you choose, optionally encrypted with a passphrase. The file contains your saved records and receipt images, so keep it somewhere you trust. We never receive it. Health-derived check-ins are not included.</p>
+<h2>Shared content: reporting and blocking</h2>
+<p>Groups are invitation-only. If someone in a group shares something that bothers you, you can report the item, hide it, or block the person in the app, or write to <a href="mailto:bwventures101@gmail.com">bwventures101@gmail.com</a>. Blocking hides that person's items on your iPhone; a group owner can also remove them from the group, and anyone can leave a group. We reply within 24 hours and help you resolve it. Shared items live in the members' iCloud accounts, so we cannot read or delete them ourselves; a report contains only what you choose to send.</p>
+<h2>No accounts, ads or tracking</h2>
+<p>This version of Offmind has no accounts and no sign-in. It contains no advertising and no analytics or tracking software, and it does not track you across other companies' apps or websites. We do not sell or share personal information.</p>
+<h2>Your data and choices</h2>
+<ul>
+<li><strong>Export:</strong> create a backup file as described above.</li>
+<li><strong>Delete:</strong> delete items in the app, or delete the app to remove everything stored on the device. Shared items in iCloud are removed when you stop sharing or delete the group.</li>
+<li><strong>Open Food Facts:</strong> to ask about their copy of a lookup, contact them using their privacy policy.</li>
+</ul>
 <h2>Children</h2>
-<p>The app is not directed at children under 13, and we knowingly collect no data from anyone.</p>
-
-<h2>Changes to this policy</h2>
-<p>If this policy changes, the updated version will be posted here with a new revision date.</p>
-
+<p>Offmind is not directed at children under 13, and we do not knowingly collect information from children.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted here with a new effective date. If a later version adds Offmind accounts, this policy will be updated before that version is released.</p>
 <h2>Contact</h2>
-<p>Questions about this policy: <a href="mailto:bwventures101@gmail.com">bwventures101@gmail.com</a></p>
+<p>Questions, support or reports: <a href="mailto:bwventures101@gmail.com">bwventures101@gmail.com</a> (support page: <a href="https://brandon325.github.io/ffmind-privacy/support.html">https://brandon325.github.io/ffmind-privacy/support.html</a>).</p>
+</main>
 </body>
 </html>
